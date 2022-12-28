@@ -45,7 +45,7 @@ void DeleteDynamicArray(DynamicArray& dArray);
 void InsertElement(DynamicArray& dArray, int element);
 void DeleteElement(DynamicArray& dArray, int elementIndex);
 void ResizeDynamicArray(DynamicArray& dArray, int newCapacity);
-void PrintDynamicArray(DynamicArray& dArray);
+void PrintDynamicArray(const DynamicArray& dArray);
 
 
 int main()
@@ -99,7 +99,7 @@ int main()
 	return 0;
 }
 
-void PrintDynamicArray(DynamicArray& dArray) {
+void PrintDynamicArray(const DynamicArray& dArray) {
 	for (int i = 0; i < dArray.size; ++i) {
 		cout << dArray.dynamicArray[i] << " ";
 	}
